@@ -1,0 +1,26 @@
+.container-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-whapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-whapp {
+    margin-right: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+}
+.icon-mail {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.3rem;
+}

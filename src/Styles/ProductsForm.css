@@ -1,0 +1,33 @@
+.form {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-label {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+.form-input {
+    outline: none;
+    width: 20rem;
+    padding: 0.4rem;
+    border: 1px solid rgb(160, 81, 160);
+    border-radius: 6px;
+}
+.form-input:focus {
+    border: 2px solid rgb(214, 108, 214);
+}
+.form-submit {
+    outline: none;
+    margin-top: 1rem;
+    padding: 0.6rem;
+    width: 20rem;
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 6px;
+}

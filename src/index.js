@@ -3,6 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { initializeApp } from "firebase/app";
+
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAXKmC-bptThWDkhZeAIz6xK8CIKgXB4T0",
+  authDomain: "tienda-mainhdra.firebaseapp.com",
+  projectId: "tienda-mainhdra",
+  storageBucket: "tienda-mainhdra.appspot.com",
+  messagingSenderId: "685690324666",
+  appId: "1:685690324666:web:6d7298bdd947ae1bbb6483"
+};
+
+// Initialize Firebase
+initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

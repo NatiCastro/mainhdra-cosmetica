@@ -1,0 +1,25 @@
+.link-nav {
+    text-decoration: none;
+    color: #000;
+    margin-right: 1.5rem;
+    font-weight: 300;
+}
+.button-nav {
+    color: #000;
+    
+}
+.container-responsive-navbar {
+    display: flex;
+    flex-direction: column;
+    
+}
+.link-nav-responsive {
+    width: 200px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    text-decoration: none;
+    color: #000;
+}
+.link-nav-responsive:focus {
+    color: #ce93d8;
+}

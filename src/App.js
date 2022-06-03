@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
+import ResponsiveAppBar from './Components/AppBar';
+import Contacto from './Components/Contact';
+import Services from './Components/Services';
+import ItemDetailContainer from './Components/ItemDetailContainer';
+import ItemListContainer from './Components/ItemListContainer';
+import ProductsForm from './Components/ProductsForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <BrowserRouter>
+        <ResponsiveAppBar />
+        {/* <h1 className='titulo-principal'>Productos</h1> */}
+
+      <Routes>
+        <Route exact path="/" element={<ItemListContainer />} />        
+        <Route exact path="/productos" element={<ItemListContainer />} />
+        <Route exact path="/categoria/:categoria" element={<ItemListContainer />} />
+        <Route exact path= "/item/:idItem" element={<ItemDetailContainer />} />
+        <Route exact path="/contacto" element={<Contacto />}/>
+        <Route exact path="/servicios" element={<Services />}/>
+        <Route exaact path="/productsform" element={<ProductsForm />} />
+      </Routes>
+   </BrowserRouter>
+    </>
   );
 }
 

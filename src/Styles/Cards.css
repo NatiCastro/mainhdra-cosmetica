@@ -1,0 +1,44 @@
+.card {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-link {
+    text-decoration: none;
+}
+.card-item {
+    margin-bottom: 1rem;
+    width: 250px;
+    height: 420px;
+}
+.card-item:hover {
+    box-shadow: 3px 3px 3px 3px rgba(117, 121, 120, 0.575);
+}
+
+.card-imagen {
+    max-width: 100%;
+    height: auto;
+}
+.card-textos {
+    height: 80px;
+    text-align: center;
+}
+.card-boton {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/* Estilo ItemDetail */
+
+.card-item-detail {
+    margin-top: 1rem;
+}
+
+  @media (min-width: 600px) {
+    .card-item-detail{
+        margin: 1rem;
+        width: 500px;
+        height: 800px;
+    }
+  }
