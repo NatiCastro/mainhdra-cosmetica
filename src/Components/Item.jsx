@@ -10,10 +10,16 @@ import { styled } from '@mui/material/styles';
 import { purple } from '@mui/material/colors';
 import { Link } from "react-router-dom";
 //import { imagen } from "../Images/aceiterosamosqueta.jpg";
+import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
+
 
 
 export default function Item ({ nombre, id, imagen, categoria, idItem }) {
-    
+
+  let theme = createTheme();
+theme = responsiveFontSizes(theme);
+
+ 
 const ColorButton = styled(Button)(({ theme }) => ({
     color: theme.palette.getContrastText(purple[500]),
     backgroundColor: purple[300],
@@ -24,17 +30,19 @@ const ColorButton = styled(Button)(({ theme }) => ({
 
     return (
         <>
-        <Link to={`/item/${idItem}`} className="card-link">
+        <ThemeProvider theme={theme}>
+      <Link to={`/item/${idItem}`} className="card-link">
     <Card className="card-item" key={id}>
       <CardMedia
         className="card-imagen"
         component="img"
         alt={nombre}
         src={imagen}
+        sx= {{height: 260}}
       />
       {/* <img className='card-imagen' src={imagen} alt="" /> */}
       <CardContent className="card-textos">
-        <Typography gutterBottom variant="h6" component="div">
+        <Typography className="card-titulo" variant="h5" component="div">
           {nombre}
         </Typography>
         <Typography variant="body2" color="text.secondary">
@@ -43,12 +51,13 @@ const ColorButton = styled(Button)(({ theme }) => ({
       </CardContent>
       <div className="card-boton">
       <CardActions>
-        <ColorButton variant={"contained"}>Quiero saber más</ColorButton>
+        <Button variant="outlined" size="medium" color="secondary">Quiero saber más</Button>
+        {/* <ColorButton variant={"contained"}>Quiero saber más</ColorButton> */}
       </CardActions>
       </div>
     </Card>
     </Link>
-    
+    </ThemeProvider>
         </>
     )
 }

@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import LocalMallIcon from '@mui/icons-material/LocalMall';
+// import LocalMallIcon from '@mui/icons-material/LocalMall';
 import { Link } from 'react-router-dom';
 import { createTheme } from '@mui/material/styles';
 import { purple, grey } from '@mui/material/colors';
@@ -23,7 +23,7 @@ const theme = createTheme({
       main: purple[50],
     },
     secondary: {
-      main: '#4a148c',
+      main: '#f8bbd0',
     },
   },
 });
@@ -56,7 +56,7 @@ const ResponsiveAppBar = () => {
 
   return (
       <ThemeProvider theme={theme}>
-    <AppBar position="static" color='primary' >
+    <AppBar position="fixed" color='primary' >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -103,17 +103,17 @@ const ResponsiveAppBar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: 'block', md: 'none' }
               }}
             >
          
               {/* {pages.map((page) => ( */}
-              <Container  className="container-responsive-navbar">
+              <Container className="container-responsive-navbar" sx={{width: 300}}>
                 {/* <MenuItem onClick={handleCloseNavMenu}> */}
-                    <Link to={'/productos'} className="link-nav-responsive">
+                    <Link to={'/'} className="link-nav-responsive">
                     <Typography textAlign="center">Home</Typography></Link>
                     <Link to={'/categoria/mainhdra'} className="link-nav-responsive">
-                    <Typography textAlign="center">Manhdra</Typography></Link>
+                    <Typography textAlign="center">Mainhdra</Typography></Link>
                     <Link to={'/categoria/miradror'} className="link-nav-responsive">
                     <Typography textAlign="center">Miradror</Typography></Link>
                     <Link to={'/servicios'} className="link-nav-responsive">
@@ -180,16 +180,16 @@ const ResponsiveAppBar = () => {
               <Link to={'/productos'} className="link-nav">
               <MenuItem onClick={handleClose}>Jabones</MenuItem></Link>
             </Menu> */}
-            <Link to={'/productos'} className="link-nav">Home</Link>
+            <Link to={'/'} className="link-nav">Home</Link>
             <Link to={'/categoria/mainhdra'} className="link-nav">Mainhdra</Link>
             <Link to={'/categoria/miradror'} className="link-nav">Miradror</Link>
             <Link to={'/servicios'} className="link-nav">Servicios</Link>
             <Link to={'/contacto'} className="link-nav">Contacto</Link>
           </Box>
-
+{/* 
           <Box sx={{ flexGrow: 0 }}>
           <Link to={'/'}><LocalMallIcon sx={{ color: grey[900] }} fontSize="large"></LocalMallIcon></Link>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>

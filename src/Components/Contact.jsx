@@ -1,26 +1,29 @@
 import React from 'react';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import '../Styles/Contact.css';
+import Presentation from './Presentation';
 
 
 export default function Contacto () {
 
     return (
         <>
-        <div className='container-contacto'>
-            <h1>Contacto</h1>
-            
-            <div className='container-whapp'>
-                <WhatsAppIcon className='icon-whapp'>
-                </WhatsAppIcon>
-                <p>11-4027-0228</p>
-            </div>
+        <Presentation />
+            <div className='container-contacto'>      
             <div className='container-mail'>
-            <MailOutlineIcon className='icon-mail'>
-            </MailOutlineIcon>
-            <p>mainhdracosmetica@gmail.com.ar</p>
-            </div>
+            <a href='https://es-la.facebook.com/mainhdracosmetica/' target='_blank'>
+                <InstagramIcon style={{ fontSize: 40 }} className='icon-mail'></InstagramIcon>
+            </a>
+            <a href='https://es-la.facebook.com/mainhdracosmetica/' target='_blank'>
+                <FacebookIcon style={{ fontSize: 40 }}></FacebookIcon>
+            </a>
+            </div>     
+            <div className='container-whapp'>
+                <a href='https://alvo.chat/V1' target='_blank'><WhatsAppIcon style={{ fontSize: 60 }} className='icon-whapp'>
+                </WhatsAppIcon></a>
+            </div>           
         </div>
         </>
     )

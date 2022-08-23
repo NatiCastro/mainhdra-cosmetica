@@ -10,15 +10,17 @@ import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@emotion/react';
 import { purple } from '@mui/material/colors';
 import { Container } from "@mui/system";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 export default function ItemDetail ({producto}) {
 
+  const navigate = useNavigate();
+
   const theme = createTheme({
     palette: {
       primary: {
-        main: purple[500],
+        main: purple[600],
       },
       secondary: {
         main: '#4a148c',
@@ -50,11 +52,9 @@ export default function ItemDetail ({producto}) {
       </CardContent>
       <div className="card-boton-detail">
       <CardActions>
-      <Link to={"/"}>
-      <Button variant="outlined" size="medium" color="primary">
+      <Button onClick={()=>navigate(-1)} variant="outlined" size="medium" color="primary">
           Volver
         </Button>
-        </Link>
       </CardActions>
       </div>
     </Card>

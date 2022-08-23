@@ -20,7 +20,7 @@ export default function ItemListContainer () {
     const [loading, setLoading] = useState(true);
 
     const [items, setItems] = useState([]);
-    //console.log(items);
+    console.log(items);
 
     const { categoria } = useParams();
 
@@ -56,10 +56,11 @@ export default function ItemListContainer () {
     },[categoria]);
 
     return (
-        <>
+        <>        
             {loading ? (
                 <LinearColor />
             ) : (
+                
             <div className="card">
                 <ItemList productos={items}/>
                 <Footer />

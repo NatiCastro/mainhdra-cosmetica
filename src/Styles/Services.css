@@ -1,5 +1,9 @@
+.container-padre {
+    margin-top: 4.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
 .container-servicios {
-    margin: 1rem;
     display: flex;
     justify-content: center;
 }

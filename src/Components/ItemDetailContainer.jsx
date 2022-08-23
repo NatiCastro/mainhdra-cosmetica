@@ -4,6 +4,7 @@ import { getDoc, doc, getFirestore } from 'firebase/firestore';
 import ItemDetail from './ItemDetail';
 import Stack from '@mui/material/Stack';
 import LinearProgress from '@mui/material/LinearProgress';
+import '../Styles/Cards.css';
 
 function LinearColor() {
   return (
@@ -43,7 +44,7 @@ export default function ItemDetailContainer () {
             {loading ? (
                         <LinearColor />
                         ) : ( 
-                        <div>
+                        <div className='container-itemdetail'>
                             <ItemDetail producto = {items} />
                         </div> 
                         )

@@ -1,5 +1,6 @@
+
 .card {
-    margin-top: 1rem;
+    margin-top: 4.8rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -21,9 +22,10 @@
     height: auto;
 }
 .card-textos {
-    height: 80px;
+    height: 65px;
     text-align: center;
 }
+
 .card-boton {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -34,7 +36,9 @@
 .card-item-detail {
     margin-top: 1rem;
 }
-
+.container-itemdetail {
+    margin-top: 4.8rem;
+}
   @media (min-width: 600px) {
     .card-item-detail{
         margin: 1rem;

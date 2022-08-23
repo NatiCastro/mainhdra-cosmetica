@@ -2,7 +2,8 @@ import React from 'react';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import '../Styles/Footer.css';
 import logo from "../Images/logo.png";
-import Typography from '@mui/material/Typography';
+//import Typography from '@mui/material/Typography';
+
 
 
 export default function Footer () {
@@ -11,17 +12,16 @@ export default function Footer () {
     <>
               <div className="footer__container">
                 <div className="footer__redes">
-                <Typography variant="body1">
-                 <WhatsAppIcon className='icon-wapp'></WhatsAppIcon>
+                <a href='https://alvo.chat/V1' target='_blank'> 
+                <WhatsAppIcon style={{ fontSize: 30 }} className='icon-wapp'></WhatsAppIcon>
+                </a>
+                <span className='whapp_numero'>                 
                   Whatsapp: 11-4027-0228
-                </Typography>
-                    {/* <a class="footer__links fab fa-instagram iconoInstagram"href="#"></a>
-                    <a class="footer__links fab fa-facebook-square iconoFacebook" href="#"></a>
-                    <a class="footer__links fab fa-youtube iconoYoutube" href="#"></a> */}
-                  </div>
+                </span>
+                </div>
                   <div className="container-copyright">
-                  <img className='logo-footer' src={logo} alt="" />
-                  <h5> Copyright 2022 | Todos los derechos reservados</h5>
+                  <img className='logo-mainhdra' src={logo} alt="" />
+                  <p> Copyright 2022 | Todos los derechos reservados</p>
                   </div>
               </div>
 

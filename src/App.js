@@ -7,16 +7,15 @@ import Services from './Components/Services';
 import ItemDetailContainer from './Components/ItemDetailContainer';
 import ItemListContainer from './Components/ItemListContainer';
 import ProductsForm from './Components/ProductsForm';
+import Home from './Components/Home';
 
 function App() {
   return (
    <>
    <BrowserRouter>
         <ResponsiveAppBar />
-        {/* <h1 className='titulo-principal'>Productos</h1> */}
-
       <Routes>
-        <Route exact path="/" element={<ItemListContainer />} />        
+        <Route exact path="/" element={<Home />} />        
         <Route exact path="/productos" element={<ItemListContainer />} />
         <Route exact path="/categoria/:categoria" element={<ItemListContainer />} />
         <Route exact path= "/item/:idItem" element={<ItemDetailContainer />} />
