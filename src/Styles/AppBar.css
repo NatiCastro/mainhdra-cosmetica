@@ -1,12 +1,11 @@
 .link-nav {
     text-decoration: none;
-    color: rgb(110, 114, 113);
+    color: rgb(93, 97, 96);
     margin-right: 1.5rem;
     font-weight: 400;
 }
 .button-nav {
-    color: #000;
-    
+    color: #000;   
 }
 .container-responsive-navbar {
     display: flex;
@@ -17,8 +16,20 @@
     padding-right: 1.5rem;
     padding-left: 1.5rem;
     text-decoration: none;
-    color: #000;
+    color: rgb(93, 97, 96);
 }
 .link-nav-responsive:focus {
     color: #ce93d8;
+}
+.icon-whapp-appbar {
+    margin-right: 0.5rem;
+    padding: 0.4rem;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+}
+.logo-nc {
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
 }

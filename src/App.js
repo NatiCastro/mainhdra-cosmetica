@@ -8,12 +8,17 @@ import ItemDetailContainer from './Components/ItemDetailContainer';
 import ItemListContainer from './Components/ItemListContainer';
 import ProductsForm from './Components/ProductsForm';
 import Home from './Components/Home';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 function App() {
   return (
    <>
    <BrowserRouter>
         <ResponsiveAppBar />
+        <div className='whapp'>
+                <a href='https://tinyurl.com/2nseb6z8' target='_blank' rel="noopener noreferrer"><WhatsAppIcon style={{ fontSize: 60 }} className='icon-whapp-principal'>
+                </WhatsAppIcon></a>
+            </div> 
       <Routes>
         <Route exact path="/" element={<Home />} />        
         <Route exact path="/productos" element={<ItemListContainer />} />

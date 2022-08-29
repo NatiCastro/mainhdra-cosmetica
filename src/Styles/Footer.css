@@ -3,11 +3,13 @@
     justify-content: center;
     align-items: center;
 }
-.whapp_numero {
-    margin-left: 0.5rem;
+.icon-redes {
+    color: #000;
+    margin: 0.3rem;
 }
-.icon-wapp {
-    color: #25d366;
+.icon-redes:focus, .icon-redes:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
 }
 .logo-mainhdra {
     margin-right: 0.5rem;
@@ -30,7 +32,7 @@
       align-items: center;
   }
   
-  .footer__container h5 {
+  .footer__container p {
     font-size: 0.7rem;
     color: rgb(71, 70, 70);
     letter-spacing: 0.1rem;
@@ -38,6 +40,10 @@
 
 
 @media (min-width: 600px) {
+    .footer_redes {
+        display: flex;
+        flex-direction: row;
+    }
 .footer__container {
     width: 100%;
     padding: 1.5rem;

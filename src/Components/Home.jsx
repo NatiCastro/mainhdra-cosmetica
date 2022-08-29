@@ -1,5 +1,6 @@
 import React from 'react';
 import Presentation from './Presentation';
+import Footer from './Footer';
 import '../Styles/Home.css';
 
 export default function Home() {
@@ -9,21 +10,22 @@ export default function Home() {
             <Presentation />
             <div className='container-home'>
             <img 
-                    src='https://sevilla.abc.es/estilo/bulevarsur/wp-content/uploads/sites/14/2020/04/limpieza-facial-casa-eliminar-puntos-negros.jpg'
+                    src='https://images.pexels.com/photos/3762466/pexels-photo-3762466.jpeg'
                     className='img-home'
                     alt='Limpieza facial'
                 />
                 <img 
-                    src="https://www.saludterapia.com/images/saludterapia/general/9480/masaje-termal2.jpg"
+                    src="https://images.pexels.com/photos/3762871/pexels-photo-3762871.jpeg"
                     className='img-home'
                     alt='masaje con piedras'
                 />
                 <img 
-                    src="https://germainegoyamadrid.com/wp-content/uploads/2016/11/Radiofrecuencia-corporal-gluteos-Deepheat-Sorisa_265x209.jpg"
+                    src="https://images.pexels.com/photos/4210657/pexels-photo-4210657.jpeg"
                     className='img-home'
                     alt='radiofrecuencia'
                 />
             </div>
+            <Footer />
         </>
     )
 }

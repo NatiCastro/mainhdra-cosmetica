@@ -1,8 +1,8 @@
 import React from 'react';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import '../Styles/Footer.css';
 import logo from "../Images/logo.png";
-//import Typography from '@mui/material/Typography';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 
 
@@ -12,12 +12,12 @@ export default function Footer () {
     <>
               <div className="footer__container">
                 <div className="footer__redes">
-                <a href='https://alvo.chat/V1' target='_blank'> 
-                <WhatsAppIcon style={{ fontSize: 30 }} className='icon-wapp'></WhatsAppIcon>
+                <a href='https://www.instagram.com/mainhdracosmetica/' target='_blank' rel="noopener noreferrer">
+                <InstagramIcon style={{ fontSize: 40 }} className='icon-redes'></InstagramIcon>
                 </a>
-                <span className='whapp_numero'>                 
-                  Whatsapp: 11-4027-0228
-                </span>
+                <a href='https://es-la.facebook.com/mainhdracosmetica/' target='_blank' rel="noopener noreferrer">
+                    <FacebookIcon style={{ fontSize: 40 }} className='icon-redes'></FacebookIcon>
+                </a>
                 </div>
                   <div className="container-copyright">
                   <img className='logo-mainhdra' src={logo} alt="" />

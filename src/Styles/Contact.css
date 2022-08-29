@@ -1,18 +1,6 @@
 
-.container-contacto {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .container-whapp {
     margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container-mail {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,8 +17,11 @@
     transform: scale(1.2);
     transition: 0.2s;
 }
-.icon-mail {
-    width: 2rem;
-    height: 2rem;
-    margin-right: 0.3rem;
+.icon-whapp:focus {
+    border-radius: 30%;
+    padding: 0.5rem;
+    background-color: #25d366;
+    color: #fff;
+    transform: scale(1.2);
+    transition: 0.2s;
 }

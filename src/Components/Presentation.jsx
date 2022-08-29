@@ -7,9 +7,11 @@ export default function Presentation() {
         <>
             <div className='container-presentation'>
                 <h1 className='titulo-principal'>Natalia Castro</h1>
-                <h3 className='subtitulo'>Dermocosmiatra y Esteticista Universitaria</h3>
-                <p className='p-presentacion'>Tratamientos faciales, corporales y masoterapia.</p>
-                <p className='p-presentacion'>Venta de productos cosméticos para armar tu rutina en casa.</p>
+                <h3 className='subtitulo'>Cosmiatra y Esteticista Universitaria</h3>
+                <p className='p-presentacion'>
+                    Tratamientos faciales, corporales y masoterapia.<br/>
+                    Venta de productos cosméticos para armar tu rutina en casa.
+                </p>
             </div>
         </>
     )

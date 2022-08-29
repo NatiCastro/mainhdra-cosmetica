@@ -6,9 +6,11 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import '../Styles/Services.css';
+import Footer from './Footer';
 
 export default function AlignItemsList() {
   return (
+    <>
     <div className='container-padre'>
     <div className='container-servicios'>
     <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
@@ -203,5 +205,7 @@ export default function AlignItemsList() {
     </List>
     </div>
     </div>
+    <Footer />
+    </>
   );
 }
