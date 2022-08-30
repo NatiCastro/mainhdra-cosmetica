@@ -16,7 +16,7 @@ function App() {
    <BrowserRouter>
         <ResponsiveAppBar />
         <div className='whapp'>
-                <a href='https://tinyurl.com/2nseb6z8' target='_blank' rel="noopener noreferrer"><WhatsAppIcon style={{ fontSize: 60 }} className='icon-whapp-principal'>
+                <a href='https://tinyurl.com/2nseb6z8' target='_blank' rel="noopener noreferrer"><WhatsAppIcon style={{ fontSize: 50 }} className='icon-whapp-principal'>
                 </WhatsAppIcon></a>
             </div> 
       <Routes>

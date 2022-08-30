@@ -4,7 +4,7 @@
     align-items: center;
 }
 .icon-redes {
-    color: #000;
+    color: rgb(117, 117, 117);
     margin: 0.3rem;
 }
 .icon-redes:focus, .icon-redes:hover {
@@ -19,7 +19,7 @@
 .footer__container {
     width: 100%;
     margin: 0;
-    padding: 0.5rem;
+    padding: 0;
     background-color:#e8e3e9;
     display: flex;
     flex-direction: column;
@@ -35,7 +35,6 @@
   .footer__container p {
     font-size: 0.7rem;
     color: rgb(71, 70, 70);
-    letter-spacing: 0.1rem;
   }
 
 
@@ -46,7 +45,8 @@
     }
 .footer__container {
     width: 100%;
-    padding: 1.5rem;
+    height: 4rem;
+    padding: 0;
     max-width: 1400px;
     background-color:#e8e3e9;
     display: flex;

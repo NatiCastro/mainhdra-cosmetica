@@ -1,11 +1,11 @@
 .whapp {
     display: flex;
     position: fixed;
-    top: 50%;
-    right: 30px;
+    bottom: 5%;
+    right: 5%;
     z-index: 999;
     border-radius: 50%;
-    padding: 0.4rem;
+    padding: 0.3rem 0.3rem 0.1rem 0.3rem;
     background-color: #25d366;
     -webkit-transition: all 0.25s ease 0s;
     transition-property: all;

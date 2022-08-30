@@ -13,10 +13,10 @@ export default function Footer () {
               <div className="footer__container">
                 <div className="footer__redes">
                 <a href='https://www.instagram.com/mainhdracosmetica/' target='_blank' rel="noopener noreferrer">
-                <InstagramIcon style={{ fontSize: 40 }} className='icon-redes'></InstagramIcon>
+                <InstagramIcon style={{ fontSize: 35 }} className='icon-redes'></InstagramIcon>
                 </a>
                 <a href='https://es-la.facebook.com/mainhdracosmetica/' target='_blank' rel="noopener noreferrer">
-                    <FacebookIcon style={{ fontSize: 40 }} className='icon-redes'></FacebookIcon>
+                    <FacebookIcon style={{ fontSize: 35 }} className='icon-redes'></FacebookIcon>
                 </a>
                 </div>
                   <div className="container-copyright">

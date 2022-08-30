@@ -7,8 +7,6 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import logo from "../Images/logo-nc.png";
-//import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Link } from 'react-router-dom';
 import { createTheme } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
@@ -73,7 +71,7 @@ const ResponsiveAppBar = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon sx={{ml:0}}/>
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -93,7 +91,7 @@ const ResponsiveAppBar = () => {
                 display: { xs: 'block', md: 'none' }
               }}
             >
-              <Container className="container-responsive-navbar" sx={{width: 250}}>
+              <Container className="container-responsive-navbar" sx={{width: 200}}>
                     <Link to={'/'} className="link-nav-responsive">
                     <Typography textAlign="center">Home</Typography></Link>
                     <Link to={'/categoria/mainhdra'} className="link-nav-responsive">
@@ -107,13 +105,13 @@ const ResponsiveAppBar = () => {
                 </Container>
             </Menu>
           </Box>
-          {/* <Typography
+          <Typography
             variant="h6"
             noWrap
             component="a"
             href=""
             sx={{
-              mr: 6,
+              mr: 4,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontFamily: 'roboto',
@@ -124,7 +122,7 @@ const ResponsiveAppBar = () => {
             }}
           >
            MAINHDRA
-          </Typography> */}
+          </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             
             <Link to={'/'} className="link-nav">Home</Link>
@@ -133,10 +131,6 @@ const ResponsiveAppBar = () => {
             <Link to={'/servicios'} className="link-nav">Servicios</Link>
             <Link to={'/contacto'} className="link-nav">Contacto</Link>
           </Box>
-          <img className='logo-nc' src={logo} alt="" />
-          {/* <a href='https://tinyurl.com/2nseb6z8' target='_blank' rel="noopener noreferrer">
-            <WhatsAppIcon className="icon-whapp-appbar" style={{ fontSize: 30 }}></WhatsAppIcon>
-          </a> */}
         </Toolbar>
       </Container>
     </AppBar>

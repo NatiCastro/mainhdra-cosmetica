@@ -6,8 +6,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import "../Styles/Cards.css";
-// import { styled } from '@mui/material/styles';
-// import { purple } from '@mui/material/colors';
 import { Link } from "react-router-dom";
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
 
@@ -18,14 +16,6 @@ export default function Item ({ nombre, id, imagen, categoria, idItem }) {
   let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
- 
-// const ColorButton = styled(Button)(({ theme }) => ({
-//     color: theme.palette.getContrastText(purple[500]),
-//     backgroundColor: purple[300],
-//     '&:hover': {
-//       backgroundColor: purple[400],
-//     },
-//   }));
 
     return (
         <>

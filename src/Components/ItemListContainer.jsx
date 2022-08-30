@@ -3,17 +3,27 @@ import { useParams } from 'react-router-dom';
 import ItemList from './ItemList';
 import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
 import "../Styles/Cards.css";
-import Stack from '@mui/material/Stack';
-import LinearProgress from '@mui/material/LinearProgress';
+// import Stack from '@mui/material/Stack';
+// import LinearProgress from '@mui/material/LinearProgress';
 import Footer from './Footer';
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
-function LinearColor() {
+function CircularIndeterminate() {
   return (
-    <Stack sx={{ width: '100%', color: 'grey.500' }} spacing={2}>
-      <LinearProgress color="secondary" />
-    </Stack>
+    <Box sx={{ display: 'flex' }}>
+      <CircularProgress color="secondary" />
+    </Box>
   );
 }
+
+// function LinearColor() {
+//   return (
+//     <Stack sx={{ width: '100%', color: 'grey.500' }} spacing={2}>
+//       <LinearProgress color="secondary" />
+//     </Stack>
+//   );
+// }
 
 export default function ItemListContainer () {
 
@@ -57,8 +67,8 @@ export default function ItemListContainer () {
 
     return (
         <>        
-            {loading ? (
-                <LinearColor />
+            { loading ? (
+                    <CircularIndeterminate />
             ) : (
                 
             <div className="card">
