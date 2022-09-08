@@ -12,7 +12,7 @@
     width: 300px;
     height: auto;
     border-radius: 15px;
-    box-shadow: 3px 4px 4px #e3cce7;
+    box-shadow: 4px 5px 5px #e3cce7;
 }
 .img-home:hover {
     box-shadow: 4px 5px 5px 5px #a797aadc;
